@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html{
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ---------------------------signup starts------------------------- */
+#signup{
+    background: black;
+    position: relative;
+    z-index: 1;
+}
+
+#signup::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: url(../img/Night_Sky_Anime_HD_wallpaper.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(6px);
+    opacity: 0.11;
+    z-index: -1;
+}
+
+#signup .signup{
+    flex-direction: column;
+}
+
+#signup .brand-logo{
+    position: absolute;
+    z-index: 10;
+    top: 25px;
+    left: center;
+    padding: 5px 5px;
+}
+
+#signup .brand-logo h2{
+    font-size: 2.7rem;
+    font-style: italic;
+    font-weight: 600;
+    letter-spacing: 0.09rem;
+    color: seashell;
+}
+
+#signup .signup form{
+    margin: 115px 0 70px 0;
+    height: fit-content;
+    width: 480px;
+    padding: 20px;
+    background: rgb(30, 33, 34);
+    border-radius: 10px;
+    box-shadow: 0px 0px 9px 0px rgb(150, 150, 150);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#signup .signup form legend{
+    font-size: 1.8rem;
+    color: white;
+    position: absolute;
+    left: 15px;
+    top: 5px;
+}
+
+#signup .signup form .line{
+    height: 1px;
+    width: 100%;
+    left: 0;
+    top: 36;
+    background: wheat;
+    position: absolute;
+}
+
+#signup .signup form .signup-fields{
+    margin-top: 35px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#signup form .signup-fields .gen-input-field{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#signup form .signup-fields .gen-input-field label{
+    margin: 0 50px 0 0;
+}
+
+#signup form .signup-fields .gen-input-field .gen-field{
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 25px 0 0;
+}
+
+#signup form .signup-fields .gen-input-field .gen-field input{
+    height: 100%;
+    width: 100%;
+}
+
+#signup form .signup-fields .gen-input-field .gen-field .gen-label{
+    margin: 2px 5px;
+}
+
+#signup .signup form .signup-fields .inline-fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: fit-content;
+    width: 100%;
+}
+
+#signup form .signup-fields label{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: whitesmoke;
+    margin-bottom: 4px;
+}
+
+#signup form .signup-fields .input-field{
+    height: 30px;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#signup form .signup-fields .emsg{
+    color: rgb(255, 101, 101);
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.05rem;
+    text-align: center;
+    margin-top: 2px;
+}
+
+#signup form .signup-fields .input-field input{
+    height: 100%;
+    width: 100%;
+    padding: 0px 10px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background: rgb(30, 33, 34);
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#signup form .signup-fields .input-field input:focus{
+    border: 1px solid rgb(25, 156, 218);
+    outline: 1px solid rgb(25, 68, 160);
+}
+
+#signup form .signup-fields .button.input-field{
+    height: 28px;
+    width: 100%;
+    margin: 10px 0 2px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#signup form .signup-fields .button.input-field input{
+    width: 50%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background: rgb(15, 100, 190);
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.07rem;
+    cursor: pointer;
+    transition: .08s ease background;
+}
+
+#signup form .signup-fields .button.input-field input:hover{
+    background: rgb(26, 121, 216);
+}
+
+#signup .signup form .signup-fields .bottom-line{
+    height: 1px;
+    width: 100%;
+    background: wheat;
+    margin: 9px 0 9px 0;
+}
+
+#signup form .signup-fields a{
+    color: rgb(50, 176, 255);
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+}
+
+#signup form .signup-fields a:hover{
+    color: rgb(100, 195, 255);
+    text-decoration: underline;
+}
+
+#signup form .signup-fields h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: whitesmoke;
+    text-align: center;
+    margin-bottom: 4px;
+}
+
+
+/* ---------------------------signup ends------------------------- */
+
+
+/* ----------------------footer starts----------------------- */
+
+#footer{
+    background: linear-gradient(5deg, rgb(16, 15, 20) 0%, rgb(10, 23, 35) 100%);
+    position: relative;
+}
+
+#footer .footer{
+    min-height: 130px;
+    flex-direction: column;
+    padding: 45px 0 10px 0;
+}
+
+#footer .footer .footer-items{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    max-width: 1100px;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+#footer .social-icons{
+    display: flex;
+    justify-content: center;
+}
+
+#footer .social-icons .soc-icon{
+    height: 40px;
+    width: 40px;
+    margin: 0px 8px;
+}
+
+#footer .soc-icon a img{
+    height: 30px;
+    width: 30px;
+    filter: drop-shadow(0px 0px 5px rgb(200, 200, 200));
+    transition: .1s ease filter;
+}
+
+#footer .soc-icon:hover a img{
+    filter: drop-shadow(0px 0px 2.5px rgb(200, 200, 200));
+}
+
+#footer .item-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 26px;
+}
+
+#footer .item-links .item-link{
+    height: fit-content;
+    width: fit-content;
+    margin: 6px 0px;
+    padding: 5px;
+}
+
+#footer .item-links .item-link a h3{
+    font-size: 1.15rem;
+    letter-spacing: 0.06rem;
+    font-weight: 400;
+    color: rgb(240, 240, 240);
+    transition: .1s ease color;
+}
+
+#footer .item-links .item-link a:hover h3{
+    color: rgb(190, 190, 190);
+}
+
+#footer .footer p{
+    color: rgb(230, 230, 230);
+    font-size: 0.95rem;
+    font-weight: 300;
+    letter-spacing: 0.05rem;
+}
+
+#footer .footer .line{
+    height: 1px;
+    width: 90vw;
+    background: slategrey;
+    margin: 6px;
+}
+
+/* ----------------------footer ends----------------------- */
+
+
+/* --------------------------media query for desktop -----------------------*/
+
+@media only screen and (min-width: 1100px){
+    /* --------------footer-------------- */
+    #footer .footer .footer-items{
+        flex-direction: row;
+    }
+    
+    #footer .item-links{
+        flex-direction: row;
+        align-items: initial;
+        margin-bottom: 0px;
+    }
+    
+    #footer .item-links .item-link{
+        margin: 0px 25px;
+    }
+    
+    /* --------------footer ends-------------- */
+    
+    }
+    
+    
+/* --------------------------media query for desktop ends -----------------*/
